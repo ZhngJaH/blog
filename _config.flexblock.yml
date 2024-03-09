@@ -1,0 +1,119 @@
+# Header
+menu:
+  首页: /
+  追番: /bangumis/index.html
+  音乐: /musics
+  友链: /links
+  关于: /about
+
+# 主页banner图
+banner: ./img/background.png
+
+# 站点通知信息
+notice: 本站纯属ZhngJah个人观点，如引起不适，欢迎退出~
+
+# 作者信息
+author:
+  name: ZhngJah
+  avatar: http://q.qlogo.cn/headimg_dl?dst_uin=884256028&spec=640&img_type=jpg
+  description: 每个人的心里，都有一个忘不记，却无法拥抱珍惜的人。
+
+toc:
+  max_depth: 3 # 生成 TOC 的最大深度
+  min_depth: 2 # 生成 TOC 的最小深度
+
+comments:
+  enable: true
+  use: 'valine' # valine || disqus
+  # valine 评论
+  # docs: https://valine.js.org
+  # You can get your appid and appkey from https://leancloud.cn
+  # 这里appId和appKey一定一定要改成自己的，没有的话去 https://leancloud.cn 这个网站注册创建一个
+  valine:
+    appId: iuRVw9PzZALk5bXziYcxvbv4-MdYXbMMI
+    appKey: o5p8oDBendhweSxLqcSheFQw
+    placeholder: 随便说点什么叭～ # 评论框占位提示符
+    avatar: mp # Gravatar 头像展示方式
+    pageSize: 10 # 评论列表分页，每页条数
+    lang: zh-cn # 多语言支持
+    visitor: true # 文章访问量统计
+    recordIP: true # 是否记录评论者IP
+    enableQQ: true # 是否启用昵称框自动获取QQ昵称和QQ头像，开启后是在昵称框输入QQ号码进行获取
+    meta: "['nick', 'mail', 'link']" # 评论者相关属性，可选值：['nick']，['nick','mail']，['nick', 'mail', 'link']
+    requiredFields: "['nick']" # 设置必填项，默认匿名
+    bilibiliEmoji: true # 是否启用Bilibili表情
+  # disqus 评论
+  # docs: https://disqus.com/
+  disqus:
+    website: 
+    error: 如果你看不到评论，那么就真的看不到评论 w(゜Д゜)w
+
+# dplayer 视频播放
+# docs: http://dplayer.js.org/#/zh-Hans/
+dplayer:
+  enable: true
+  theme: "#b7daff"
+  autoplay: false
+  loop: false
+  mutex: true
+
+# aplayer 音频播放
+# docs: https://aplayer.js.org/#/zh-Hans/
+aplayer:
+  enable: true
+  theme: "#b7daff"
+  autoplay: false
+  loop: false
+  mutex: true
+  lrcType: 3
+
+# mathjax LaTeX公式支持
+# docs: http://docs.mathjax.org/en/latest/
+mathjax:
+  enable: true
+
+# polyfill 提供老版浏览器对新语法的支持
+# website: https://polyfill.io/v3/ 
+polyfill:
+  enable: false
+
+
+# 国内备案信息
+beian: 
+
+# 谷歌分析
+google_analytics: 
+# gauges分析
+gauges_analytics: 
+# 百度分析
+baidu_analytics: 
+# 腾讯分析
+tencent_analytics: 
+# 站点ico
+favicon: ./img/logo.png
+
+
+# Social Icon
+social_icon:
+  enable: true
+  icons:
+    ins     :
+    zhihu   :
+    weibo   : 
+    github  : https://github.com/ZhngJah/
+    twitter : https://twitter.com/zhngjah3
+
+# abbrlink config
+abbrlink:
+  alg: crc32      #support crc16(default) and crc32
+  rep: hex        #support dec(default) and hex
+  drafts: false   #(true)Process draft,(false)Do not process draft. false(default) 
+  # Generate categories from directory-tree
+  # depth: the max_depth of directory-tree you want to generate, should > 0
+  auto_category:
+     enable: true  #true(default)
+     depth:        #3(default)
+     over_write: false 
+  auto_title: false #enable auto title, it can auto fill the title by path
+  auto_date: false #enable auto date, it can auto fill the date by time today
+  force: false #enable force mode,in this mode, the plugin will ignore the cache, and calc the abbrlink for every post even it already had abbrlink. This only updates abbrlink rather than other front variables.
